@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan 2025 Countdown (Selectable Dates)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown to Ramadan 2025</h1>
+        <div class="countdown">
+            <div class="time-unit">
+                <div id="months" class="time-value">00</div>
+                <div class="time-label">Months</div>
+            </div>
+            <div class="time-unit">
+                <div id="days" class="time-value">00</div>
+                <div class="time-label">Days</div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div id="percentage"></div>
+        <div id="message"></div>
+        <div class="date-select">
+            <button id="date1Button" class="date-button selected" onclick="selectDate(1)">February 28, 2025</button>
+            <button id="date2Button" class="date-button" onclick="selectDate(2)">March 1, 2025</button>
+        </div>
+        <div class="date-input">
+            <input type="date" id="startDate1" value="2025-02-28">
+            <input type="date" id="startDate2" value="2025-03-01">
+            <button onclick="updateDates()">Update Start Dates</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
